@@ -1,4 +1,3 @@
-Absolutely! Here's a **GitHub project folder structure template** for your **AI Content Calendar Builder for Creators** — tailored for a **Node.js + React (Vite) + Google Sheets API + OpenAI** stack. You can adjust for Notion or switch backend/frontend tech as needed.
 
 ---
 
