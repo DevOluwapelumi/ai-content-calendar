@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #f9fafb; /* fallback for bg-gray-50 */
+    color: #1f2937; /* fallback for text-gray-800 */
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    color: #111827; /* fallback for text-gray-900 */
+  }
+
+  input, select, textarea, button {
+    @apply focus:outline-none focus:ring-2 focus:ring-blue-300;
+  }
+}
+
+
+/* Add smooth transitions for better UX */
+@layer utilities {
+  .transition-base {
+    @apply transition duration-200 ease-in-out;
+  }
+
+  .shadow-card {
+    @apply shadow-lg hover:shadow-xl;
+  }
+}
+
+/* Optional scrollbar customization (nice for long calendars) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a0aec0;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #718096;
+}
